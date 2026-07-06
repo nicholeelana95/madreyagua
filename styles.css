@@ -87,8 +87,10 @@ html[lang="es"] .langtoggle .lg-es{opacity:1;}
 .hero-title{font-family:var(--serif);font-weight:400;font-size:clamp(3.4rem,17vw,6.2rem);line-height:.9;letter-spacing:-.01em;color:var(--sangre);text-transform:lowercase;}
 .hero-sub{font-family:var(--ui);font-weight:500;font-size:.72rem;letter-spacing:.36em;text-transform:uppercase;color:var(--tobacco);margin:1.4rem 0 1.9rem;}
 .hero-tag{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.15rem,4.6vw,1.55rem);line-height:1.85;color:var(--cacao);}
-.hero .btn{margin-top:2.4rem;}
-.hero-scroll{display:inline-block;margin-top:1.7rem;color:var(--sangre);}
+
+.hero-scroll{display:inline-flex;flex-direction:column;align-items:center;gap:.55rem;margin-top:2.4rem;color:var(--sangre);text-decoration:none;}
+.hero-scroll-label{font-family:var(--ui);font-weight:500;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--sangre);transition:color .3s;}
+.hero-scroll:hover .hero-scroll-label{color:var(--sienna);}
 .hero-scroll svg{width:20px;height:20px;stroke:var(--sangre);stroke-width:1.5;fill:none;animation:bob 2.4s ease-in-out infinite;}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
 
