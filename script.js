@@ -55,16 +55,33 @@
     });
   }
 
-  /* ---- Contact form — placeholder until wired at launch ---- */
+  /* ---- Contact form — Formspree (background submit, no page reload) ---- */
   var cf = document.querySelector('.contact-form');
   if (cf) {
     cf.addEventListener('submit', function (e) {
       e.preventDefault();
-      var n = document.getElementById('form-note');
-      if (n) n.style.display = 'block';
+      var ok = document.getElementById('form-note');
+      var err = document.getElementById('form-error');
+      var btn = cf.querySelector('button[type="submit"]');
+      if (ok) ok.style.display = 'none';
+      if (err) err.style.display = 'none';
+      if (btn) btn.disabled = true;
+      fetch(cf.action, {
+        method: 'POST',
+        body: new FormData(cf),
+        headers: { 'Accept': 'application/json' }
+      }).then(function (r) {
+        if (btn) btn.disabled = false;
+        if (r.ok) { cf.reset(); if (ok) ok.style.display = 'block'; }
+        else { if (err) err.style.display = 'block'; }
+      }).catch(function () {
+        if (btn) btn.disabled = false;
+        if (err) err.style.display = 'block';
+      });
     });
   }
-   /* ---- Testimonials slider (Offerings) ---- */
+
+  /* ---- Testimonials slider (Offerings) ---- */
   var tslider = document.querySelector('[data-tslider]');
   if (tslider) {
     var tslides = [].slice.call(tslider.querySelectorAll('.tslide'));
@@ -82,5 +99,6 @@
     if (tnext) tnext.addEventListener('click', function () { tshow(ti + 1); });
     tdots.forEach(function (d, x) { d.addEventListener('click', function () { tshow(x); }); });
     tshow(0);
-  }   
+  }
+
 })();
