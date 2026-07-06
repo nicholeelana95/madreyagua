@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#F1E8D5">
+<meta name="description" content="Madre y Agua — the ritual arts of living in relationship. Enter the rooms: about, consultations, rituals & offerings, journal, recipes, community.">
+<title>Madre y Agua — Ritual Arts of Living in Relationship</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Libre+Baskerville:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#explore">Skip to sections</a>
+
+<!-- ═══ TOP BAR ═══ menu (left) + bag (right); both open the full menu -->
+<header class="top-bar">
+  <button class="circle-btn" data-menu-open aria-label="Open menu">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
+  <button class="circle-btn" data-menu-open aria-label="Open menu">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg>
+  </button>
+</header>
+
+<!-- ═══ MENU OVERLAY ═══ every room + Philosophy + contact live here -->
+<nav class="menu" id="menu" aria-label="Main menu">
+  <button class="circle-btn" data-menu-close aria-label="Close menu" style="position:absolute;top:1rem;right:1.1rem;">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <ul class="menu-list">
+    <li><a href="about.html"><span class="mnum">01</span> About</a></li>
+    <li><a href="body-plant-story.html"><span class="mnum">02</span> Consultations</a></li>
+    <li><a href="food-ritual-gathering.html"><span class="mnum">03</span> Rituals &amp; Offerings</a></li>
+    <li><a href="stay-connected.html"><span class="mnum">04</span> Journal</a></li>
+    <li><a href="recipes.html"><span class="mnum">05</span> Recipes</a></li>
+    <li><a href="gatherings.html"><span class="mnum">06</span> Community</a></li>
+    <li><a href="philosophy.html"><span class="mnum">07</span> Philosophy</a></li>
+  </ul>
+  <div class="menu-foot">
+    <a href="#newsletter">Newsletter</a>
+    <a href="#" aria-label="Instagram — link to be added">Instagram</a>
+    <a href="#" aria-label="WhatsApp — link to be added">WhatsApp</a>
+    <a href="mailto:hello@madreyagua.com">Email</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- ═══ HERO ═══ brand cover; the photographic moment appears when images/hero.jpg exists -->
+<section class="home-hero">
+  <div class="home-hero-brand">
+    <svg class="sun" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="20" cy="20" r="7"/><path d="M20 3v6M20 31v6M3 20h6M31 20h6M8 8l4 4M28 28l4 4M32 8l-4 4M12 28l-4 4"/></svg>
+    <h1>madre<br>y agua</h1>
+    <svg class="brand-wave" viewBox="0 0 60 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 6q7-6 14 0t14 0 14 0 14 0"/></svg>
+    <p class="tagline">Ritual Arts of<br>Living in Relationship</p>
+    <svg class="sun lower" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="20" cy="20" r="7"/><path d="M20 3v6M20 31v6M3 20h6M31 20h6M8 8l4 4M28 28l4 4M32 8l-4 4M12 28l-4 4"/></svg>
+  </div>
+
+  <div class="home-hero-photo" data-img-gate>
+    <img class="img-slot" src="images/hero.jpg" alt="Woman gathering herbs by a river" onerror="this.remove()">
+  </div>
+
+  <a class="hero-scroll-cue" href="#explore" aria-label="Scroll to sections">
+    <span>Enter</span>
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 9l7 7 7-7"/></svg>
+  </a>
+</section>
+
+<!-- ═══ CHAPTER BANDS ═══ each opens a dedicated page. Solid color now;
+     drop images/room-*.jpg later and photography bleeds in from the right. -->
+<section class="rooms" id="explore" aria-label="Sections">
+
+  <a class="room" style="--room:#8A2E22" href="about.html">
+    <div class="room-media" aria-hidden="true"><img class="img-slot" src="images/room-about.jpg" alt="" onerror="this.remove()"></div>
+    <div class="room-inner"><span class="room-num">01</span><span class="room-title">About</span><span class="room-arrow" aria-hidden="true">→</span></div>
+  </a>
+
+  <a class="room" style="--room:#3A2417" href="body-plant-story.html">
+    <div class="room-media" aria-hidden="true"><img class="img-slot" src="images/room-consultations.jpg" alt="" onerror="this.remove()"></div>
+    <div class="room-inner"><span class="room-num">02</span><span class="room-title">Consultations</span><span class="room-arrow" aria-hidden="true">→</span></div>
+  </a>
+
+  <a class="room" style="--room:#3A4A2E" href="food-ritual-gathering.html">
+    <div class="room-media" aria-hidden="true"><img class="img-slot" src="images/room-rituals.jpg" alt="" onerror="this.remove()"></div>
+    <div class="room-inner"><span class="room-num">03</span><span class="room-title">Rituals &amp; Offerings</span><span class="room-arrow" aria-hidden="true">→</span></div>
+  </a>
+
+  <a class="room" style="--room:#26395C" href="stay-connected.html">
+    <div class="room-media" aria-hidden="true"><img class="img-slot" src="images/room-journal.jpg" alt="" onerror="this.remove()"></div>
+    <div class="room-inner"><span class="room-num">04</span><span class="room-title">Journal</span><span class="room-arrow" aria-hidden="true">→</span></div>
+  </a>
+
+  <a class="room" style="--room:#8F5E18" href="recipes.html">
+    <div class="room-media" aria-hidden="true"><img class="img-slot" src="images/room-recipes.jpg" alt="" onerror="this.remove()"></div>
+    <div class="room-inner"><span class="room-num">05</span><span class="room-title">Recipes</span><span class="room-arrow" aria-hidden="true">→</span></div>
+  </a>
+
+  <a class="room" style="--room:#9E4A28" href="gatherings.html">
+    <div class="room-media" aria-hidden="true"><img class="img-slot" src="images/room-community.jpg" alt="" onerror="this.remove()"></div>
+    <div class="room-inner"><span class="room-num">06</span><span class="room-title">Community</span><span class="room-arrow" aria-hidden="true">→</span></div>
+  </a>
+
+</section>
+
+<!-- ═══ NEWSLETTER ═══ -->
+<section class="home-news" id="newsletter">
+  <svg class="news-botanical left" viewBox="0 0 120 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60 200C58 150 55 110 45 80M45 90C25 78 15 58 20 38M45 110C30 100 22 82 26 64M45 130C62 120 72 102 68 84M45 150C28 142 20 126 24 110"/></svg>
+  <svg class="news-botanical right" viewBox="0 0 120 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60 200C62 150 66 110 72 82"/><circle cx="60" cy="60" r="7"/><circle cx="78" cy="74" r="6"/><circle cx="44" cy="76" r="6"/><circle cx="72" cy="94" r="5"/><circle cx="50" cy="96" r="5"/></svg>
+  <div class="news-inner">
+    <svg class="news-wave" viewBox="0 0 60 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 6q7-6 14 0t14 0 14 0 14 0"/></svg>
+    <h2>Stay Connected</h2>
+    <form class="news-form" action="#" novalidate>
+      <input type="email" name="email" placeholder="your email" aria-label="Email address" required>
+      <button type="submit" aria-label="Subscribe"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </form>
+    <p class="news-note" id="news-note">Wired up at launch — for now, write to <a href="mailto:hello@madreyagua.com" style="color:var(--sangre);">hello@madreyagua.com</a>.</p>
+    <svg class="news-sun" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="20" cy="20" r="7"/><path d="M20 3v6M20 31v6M3 20h6M31 20h6M8 8l4 4M28 28l4 4M32 8l-4 4M12 28l-4 4"/></svg>
+    <div class="news-social">
+      <a href="#" aria-label="Instagram — link to be added">Instagram</a>
+      <a href="#" aria-label="WhatsApp — link to be added">WhatsApp</a>
+      <a href="mailto:hello@madreyagua.com">Email</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script src="scripts.js" defer></script>
+</body>
+</html>

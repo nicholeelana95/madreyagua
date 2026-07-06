@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#F5F0E7">
+<meta name="description" content="Upcoming gatherings — workshops, tables, ceremonies, and seasonal events hosted by Madre y Agua and the community around this work.">
+<title>Gatherings — Madre y Agua</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Libre+Baskerville:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<nav>
+  <a class="nav-logo" href="index.html">Madre y Agua</a>
+  <ul class="nav-links">
+    <li class="nav-hide"><a href="index.html#explore">Practices</a></li>
+    <li class="nav-hide"><a href="gatherings.html">Gatherings</a></li>
+    <li class="nav-hide"><a href="stay-connected.html">Journal</a></li>
+    <li class="nav-hide"><a href="about.html">About</a></li>
+    <li><a class="nav-cta" href="stay-connected.html">Stay Connected</a></li>
+  </ul>
+</nav>
+
+<main id="main">
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <span class="label">— Gatherings</span>
+    <h1>An ongoing <em>conversation</em>.</h1>
+    <!-- DRAFT copy for Nichole's approval — this page concept is newer than her extraction -->
+    <p class="lede">Workshops, tables, ceremonies, and seasonal gatherings — hosted by Madre y Agua and by the teachers and friends of this work.</p>
+  </div>
+</section>
+
+<section class="band bg-bone" style="padding-top:3rem;">
+  <div class="band-narrow center">
+    <div class="prose-long">
+      <p class="reveal">Madre y Agua is an ongoing conversation. A place for exploring the relationships that shape a life.</p>
+    </div>
+  </div>
+  <div class="themes" style="margin-top:3rem;">
+    <span class="theme reveal">Body &amp; nervous system wisdom</span>
+    <span class="theme reveal">Food as memory</span>
+    <span class="theme reveal">Plants as teachers</span>
+    <span class="theme reveal">Lineage &amp; belonging</span>
+    <span class="theme reveal">Song, rhythm, &amp; story</span>
+    <span class="theme reveal">Womanhood &amp; transition</span>
+    <span class="theme reveal">Creativity &amp; expression</span>
+  </div>
+  <p class="stanza reveal" style="margin-top:4rem;">Because life has always been carried collectively.<br>And because the future is shaped by <em>what we choose to tend</em>.</p>
+</section>
+
+<section class="band bg-mist">
+  <div class="band-inner">
+    <span class="label reveal">— On the Calendar</span>
+    <h2 class="band-title reveal">Upcoming gatherings</h2>
+
+    <!-- ══════════════════════════════════════════════════════════
+         HOW TO ADD A GATHERING (for Nichole + Claude):
+         1. Copy the template block below into the events-list div.
+         2. Fill in: data-date (YYYY-MM-DD), day, month, host line,
+            title, description, and location/details.
+         3. Host tag: use class "host-mya" with text
+            "Hosted by Madre y Agua" for Nichole's own events, or
+            class "host-com" with text "From the community · Hosted
+            by [Name]" for teachers' and friends' events.
+         4. Past-dated gatherings hide themselves automatically —
+            but delete old blocks now and then to keep the file tidy.
+         5. Delete the <span class="pill-example">…</span> line;
+            that pill only marks sample listings.
+
+    <article class="event-card reveal" data-date="2026-12-31">
+      <div class="event-date">
+        <span class="event-day">31</span>
+        <span class="event-month">Dec 2026</span>
+      </div>
+      <div class="event-body">
+        <span class="event-host host-mya">Hosted by Madre y Agua</span>
+        <h3>Gathering title</h3>
+        <p class="event-desc">One or two sentences about the gathering.</p>
+        <p class="event-meta">City, State · Details &amp; registration: hello@madreyagua.com</p>
+      </div>
+    </article>
+         ══════════════════════════════════════════════════════════ -->
+
+    <div class="events-list" style="margin-top:2.5rem;">
+
+      <article class="event-card reveal" data-date="2026-09-20">
+        <div class="event-date">
+          <span class="event-day">20</span>
+          <span class="event-month">Sep 2026</span>
+        </div>
+        <div class="event-body">
+          <span class="event-host host-mya">Hosted by Madre y Agua</span><span class="pill-example">Example listing</span>
+          <h3>A Seasonal Table — Autumn Equinox</h3>
+          <p class="event-desc">An evening of ancestral foods, story, and song to mark the turning of the season.</p>
+          <p class="event-meta">Los Angeles, CA · Details &amp; registration: hello@madreyagua.com</p>
+        </div>
+      </article>
+
+      <article class="event-card reveal" data-date="2026-10-11">
+        <div class="event-date">
+          <span class="event-day">11</span>
+          <span class="event-month">Oct 2026</span>
+        </div>
+        <div class="event-body">
+          <span class="event-host host-com">From the community · Hosted by a teacher of this work</span><span class="pill-example">Example listing</span>
+          <h3>River Tending Day</h3>
+          <p class="event-desc">A community day of tending, observation, and a shared meal beside the water.</p>
+          <p class="event-meta">Location to come · Shared on behalf of the community</p>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="event-empty" id="events-empty" style="margin-top:2.5rem;">
+      <p>No gatherings on the calendar right now.<br><a href="stay-connected.html">Join the correspondence</a> to hear when the next one is announced.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <span class="label reveal">— From the Community</span>
+  <h2 class="reveal">Hosting something aligned?</h2>
+  <!-- DRAFT copy for Nichole's approval -->
+  <p class="reveal">If you are part of this community and hosting a gathering in this spirit, reach out — aligned offerings from teachers and friends are shared here.</p>
+  <div class="btn-row reveal">
+    <a class="btn" href="mailto:hello@madreyagua.com">Share a gathering</a>
+    <a class="btn-ghost" href="stay-connected.html">Join the correspondence</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="ft-brand reveal">
+    <span class="ft-name">Madre y Agua</span>
+    <p>Stories as medicine. Following the threads between memory and becoming.</p>
+    <div class="ft-social" style="margin-top:1.6rem;">
+      <a href="#" aria-label="Instagram (link to be added)" title="Instagram — link to be added">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="5" stroke-width="1.4"/><circle cx="12" cy="12" r="4" stroke-width="1.4"/><circle cx="17.5" cy="6.5" r="1" fill="#F1E8D5" stroke="none"/></svg>
+      </a>
+      <a href="#" aria-label="Spotify (link to be added)" title="Spotify — link to be added">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9.2" stroke-width="1.4"/><path d="M7.5,10 q4.5,-1.2 9,0.6 M8,13 q3.8,-1 7.4,0.6 M8.5,15.8 q3,-0.8 5.8,0.5" stroke-width="1.3"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="ft-col reveal">
+    <h4>Practices</h4>
+    <ul>
+      <li><a href="body-plant-story.html">Body, Plant &amp; Story</a></li>
+      <li><a href="food-ritual-gathering.html">The Community Table</a></li>
+      <li><a href="stay-connected.html">The Journal</a></li>
+    </ul>
+  </div>
+  <div class="ft-col reveal">
+    <h4>Explore</h4>
+    <ul>
+      <li><a href="about.html">About Nichole</a></li>
+      <li><a href="philosophy.html">Philosophy</a></li>
+      <li><a href="gatherings.html">Gatherings</a></li>
+      <li><a href="mailto:hello@madreyagua.com">hello@madreyagua.com</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="ft-bottom">
+  <p>© 2026 Madre y Agua · All rights reserved.</p>
+  <p>The Ritual Arts of Living in Relationship</p>
+</div>
+
+<script src="scripts.js" defer></script>
+</body>
+</html>
