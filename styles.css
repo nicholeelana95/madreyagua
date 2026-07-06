@@ -241,3 +241,17 @@ html[lang="es"] .lang-es{display:inline;}
   .stmt{background-color:var(--cacao)!important;}
   .cta{background-color:var(--forest)!important;}
 }
+/* ---- Testimonials slider (Offerings) ---- */
+.tslider{position:relative;max-width:780px;margin:2.4rem auto 0;display:flex;align-items:center;gap:.8rem;}
+.tstage{flex:1;min-width:0;}
+.tslide{display:none;}
+.tslide.is-active{display:block;animation:tfade .5s ease;}
+.tquote{font-family:var(--serif);font-style:italic;font-size:clamp(1.12rem,2.8vw,1.42rem);line-height:1.8;color:var(--cacao);}
+.tcite{margin-top:1.4rem;font-family:var(--ui);font-weight:500;font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sienna);}
+.tnav{flex:none;width:44px;height:44px;border-radius:50%;background:transparent;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .3s,border-color .3s;}
+.tnav:hover{background:var(--bone);border-color:var(--sienna);}
+.tnav svg{width:17px;height:17px;stroke:var(--sienna);stroke-width:1.7;fill:none;}
+.tdots{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-top:1.9rem;}
+.tdot{width:7px;height:7px;border-radius:50%;background:var(--line);border:none;padding:0;cursor:pointer;transition:background .3s,transform .3s;}
+.tdot.is-active{background:var(--sienna);transform:scale(1.25);}
+@keyframes tfade{from{opacity:0}to{opacity:1}}
