@@ -201,6 +201,10 @@ html[lang="es"] .langtoggle .lg-es{opacity:1;}
 .litany{list-style:none;max-width:600px;margin:2.2rem auto;}
 .litany li{font-family:var(--serif);font-size:clamp(1.05rem,2.6vw,1.28rem);line-height:1.7;color:var(--cacao);text-align:center;padding:.55rem 0;border-bottom:1px solid var(--line);}
 .litany li:last-child{border-bottom:none;}
+
+/* Offerings: understated per-offering invitation link */
+.arrow-link{display:inline-block;margin-top:1.7rem;font-family:var(--ui);font-weight:500;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sienna);text-decoration:none;border-bottom:1px solid var(--sienna);padding-bottom:3px;transition:color .3s,border-color .3s;}
+.arrow-link:hover{color:var(--sangre);border-color:var(--sangre);}
 .foot-social{display:flex;justify-content:center;gap:1.5rem;margin-top:1.8rem;}
 .foot-social a{font-family:var(--ui);font-weight:500;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--tobacco);text-decoration:none;transition:color .3s;}
 .foot-social a:hover{color:var(--sangre);}
