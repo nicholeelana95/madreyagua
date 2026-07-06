@@ -64,4 +64,23 @@
       if (n) n.style.display = 'block';
     });
   }
+   /* ---- Testimonials slider (Offerings) ---- */
+  var tslider = document.querySelector('[data-tslider]');
+  if (tslider) {
+    var tslides = [].slice.call(tslider.querySelectorAll('.tslide'));
+    var tdotsWrap = document.querySelector('[data-tdots]');
+    var tdots = tdotsWrap ? [].slice.call(tdotsWrap.querySelectorAll('.tdot')) : [];
+    var ti = 0;
+    var tshow = function (n) {
+      ti = (n + tslides.length) % tslides.length;
+      tslides.forEach(function (s, x) { s.classList.toggle('is-active', x === ti); });
+      tdots.forEach(function (d, x) { d.classList.toggle('is-active', x === ti); });
+    };
+    var tprev = tslider.querySelector('.tprev');
+    var tnext = tslider.querySelector('.tnext');
+    if (tprev) tprev.addEventListener('click', function () { tshow(ti - 1); });
+    if (tnext) tnext.addEventListener('click', function () { tshow(ti + 1); });
+    tdots.forEach(function (d, x) { d.addEventListener('click', function () { tshow(x); }); });
+    tshow(0);
+  }   
 })();
