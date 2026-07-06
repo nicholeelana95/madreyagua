@@ -188,12 +188,19 @@ html[lang="es"] .langtoggle .lg-es{opacity:1;}
 
 /* ---- Footer ---- */
 .foot{background:var(--bone);border-top:1px solid var(--line);padding:4rem 1.5rem 3rem;text-align:center;}
-.foot-in{max-width:400px;margin:0 auto;}
+.foot-in{max-width:560px;margin:0 auto;}
 .foot-sun{width:26px;height:26px;stroke:var(--sienna);stroke-width:1.4;fill:none;margin:0 auto 1.2rem;}
 .foot h2{font-family:var(--ui);font-weight:500;font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--tobacco);}
 .foot-sub{font-family:var(--serif);font-style:italic;font-size:1.05rem;color:var(--tobacco);margin:.7rem 0 1.6rem;}
 /* Flodesk newsletter form sits inside the footer */
-[id^="fd-form-"]{max-width:420px;margin:1.6rem auto 0;}
+[id^="fd-form-"]{max-width:520px;width:100%;margin:1.6rem auto 0;}
+
+/* About page: incantation + litany blocks (reuse existing type/color) */
+.incant{list-style:none;text-align:center;margin:2.6rem auto;max-width:540px;}
+.incant li{font-family:var(--serif);font-style:italic;font-size:clamp(1.2rem,3.2vw,1.5rem);line-height:2.1;color:var(--cacao);}
+.litany{list-style:none;max-width:600px;margin:2.2rem auto;}
+.litany li{font-family:var(--serif);font-size:clamp(1.05rem,2.6vw,1.28rem);line-height:1.7;color:var(--cacao);text-align:center;padding:.55rem 0;border-bottom:1px solid var(--line);}
+.litany li:last-child{border-bottom:none;}
 .foot-social{display:flex;justify-content:center;gap:1.5rem;margin-top:1.8rem;}
 .foot-social a{font-family:var(--ui);font-weight:500;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--tobacco);text-decoration:none;transition:color .3s;}
 .foot-social a:hover{color:var(--sangre);}
