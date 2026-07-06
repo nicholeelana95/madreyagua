@@ -255,3 +255,30 @@ html[lang="es"] .lang-es{display:inline;}
 .tdot{width:7px;height:7px;border-radius:50%;background:var(--line);border:none;padding:0;cursor:pointer;transition:background .3s,transform .3s;}
 .tdot.is-active{background:var(--sienna);transform:scale(1.25);}
 @keyframes tfade{from{opacity:0}to{opacity:1}}
+
+/* ---- Offerings index cards (each links to its dedicated page) ---- */
+.ocards{display:grid;grid-template-columns:1fr;gap:1.1rem;max-width:1000px;margin:0 auto;}
+.ocard{display:flex;flex-direction:column;background:var(--bone);border:1px solid var(--line);text-decoration:none;overflow:hidden;transition:transform .25s,box-shadow .3s,border-color .3s;}
+.ocard:hover{transform:translateY(-3px);border-color:var(--sienna);box-shadow:0 14px 34px rgba(58,36,23,.10);}
+.ocard-img{display:block;height:210px;background-color:var(--card,#3A2417);background-size:cover;background-position:center;}
+.ocard--sessions .ocard-img{background-color:var(--forest);background-image:url('images/sessions.jpg');}
+.ocard--mentorship .ocard-img{background-color:var(--maize);background-image:url('images/mentorship.jpg');}
+.ocard--gatherings .ocard-img{background-color:var(--sienna);background-image:url('images/gatherings.jpg');}
+.ocard-body{display:flex;flex-direction:column;flex:1;padding:1.9rem 1.6rem 1.7rem;text-align:center;}
+.ocard-tag{display:block;font-family:var(--ui);font-weight:500;font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sienna);}
+.ocard-title{display:block;font-family:var(--serif);font-size:clamp(1.6rem,4vw,2rem);color:var(--cacao);margin:.5rem 0 .7rem;}
+.ocard-text{display:block;font-family:var(--body);font-size:.85rem;line-height:1.8;color:var(--tobacco);flex:1;}
+.ocard-pill{align-self:center;margin-top:1.2rem;font-family:var(--ui);font-weight:500;font-size:.54rem;letter-spacing:.18em;text-transform:uppercase;color:var(--tobacco);border:1px solid var(--line);border-radius:44px;padding:.42rem 1.1rem;}
+.ocard-more{display:block;margin-top:1.3rem;font-family:var(--ui);font-weight:500;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sienna);transition:color .3s;}
+.ocard:hover .ocard-more{color:var(--sangre);}
+
+/* ---- Dedicated offering page: future portfolio gallery ---- */
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:.7rem;max-width:900px;margin:2.4rem auto 0;}
+.gtile{display:block;aspect-ratio:4/5;background-color:var(--mist);background-size:cover;background-position:center;border:1px solid var(--line);}
+.gallery-note{text-align:center;font-family:var(--serif);font-style:italic;font-size:1rem;color:var(--tobacco);margin-top:1.4rem;}
+
+@media (min-width:768px){
+  .ocards{grid-template-columns:repeat(3,1fr);gap:1.2rem;}
+  .ocard-img{height:240px;}
+  .gallery{grid-template-columns:repeat(3,1fr);}
+}
