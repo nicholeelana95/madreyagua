@@ -1,6 +1,6 @@
 /* ============================================================
    MADRE Y AGUA — script.js
-   Menu · language toggle (persists) · reveal · form placeholders
+   Menu · language toggle (persists) · reveal · Flodesk newsletter · contact form
    ============================================================ */
 (function () {
   'use strict';
@@ -13,16 +13,8 @@
   function setLang(lang) {
     document.documentElement.setAttribute('lang', lang);
     try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
-    applyPlaceholders(lang);
-  }
-  function applyPlaceholders(lang) {
-    document.querySelectorAll('[data-ph-en]').forEach(function (el) {
-      var v = lang === 'es' ? el.getAttribute('data-ph-es') : el.getAttribute('data-ph-en');
-      if (v != null) el.setAttribute('placeholder', v);
-    });
   }
   // (an inline <head> script has already applied the saved language to avoid a flash)
-  applyPlaceholders(currentLang());
   document.querySelectorAll('[data-lang-toggle]').forEach(function (btn) {
     btn.addEventListener('click', function () {
       setLang(currentLang() === 'es' ? 'en' : 'es');
@@ -54,15 +46,14 @@
     reveals.forEach(function (el) { el.classList.add('visible'); });
   }
 
-  /* ---- Newsletter (footer) — placeholder until wired at launch ---- */
-  document.querySelectorAll('.foot-form').forEach(function (f) {
-    f.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var n = f.parentNode.querySelector('.foot-note');
-      if (n) n.classList.add('shown');
-      f.reset();
+  /* ---- Newsletter: render the Flodesk form into the footer ---- */
+  var fdEl = document.getElementById('fd-form-6a4b44f15a5bca9d6217e2c7');
+  if (fdEl && typeof window.fd === 'function') {
+    window.fd('form', {
+      formId: '6a4b44f15a5bca9d6217e2c7',
+      containerEl: '#fd-form-6a4b44f15a5bca9d6217e2c7'
     });
-  });
+  }
 
   /* ---- Contact form — placeholder until wired at launch ---- */
   var cf = document.querySelector('.contact-form');

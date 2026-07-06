@@ -192,15 +192,8 @@ html[lang="es"] .langtoggle .lg-es{opacity:1;}
 .foot-sun{width:26px;height:26px;stroke:var(--sienna);stroke-width:1.4;fill:none;margin:0 auto 1.2rem;}
 .foot h2{font-family:var(--ui);font-weight:500;font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--tobacco);}
 .foot-sub{font-family:var(--serif);font-style:italic;font-size:1.05rem;color:var(--tobacco);margin:.7rem 0 1.6rem;}
-.foot-form{display:flex;align-items:center;gap:.7rem;border-bottom:1px solid var(--sangre);padding-bottom:.4rem;}
-.foot-form input{flex:1;min-width:0;border:none;background:transparent;font-family:var(--serif);font-style:italic;font-size:1.1rem;color:var(--cacao);}
-.foot-form input::placeholder{color:var(--tobacco);opacity:.6;}
-.foot-form input:focus{outline:none;}
-.foot-form button{flex:none;width:44px;height:44px;border-radius:50%;background:var(--sangre);border:none;display:flex;align-items:center;justify-content:center;transition:background .3s;}
-.foot-form button:hover{background:#a5341f;}
-.foot-form button svg{width:18px;height:18px;stroke:var(--bone);stroke-width:1.6;fill:none;}
-.foot-note{display:none;margin-top:.9rem;font-family:var(--serif);font-style:italic;font-size:.95rem;color:var(--indigo);}
-.foot-note.shown{display:block;}
+/* Flodesk newsletter form sits inside the footer */
+[id^="fd-form-"]{max-width:420px;margin:1.6rem auto 0;}
 .foot-social{display:flex;justify-content:center;gap:1.5rem;margin-top:1.8rem;}
 .foot-social a{font-family:var(--ui);font-weight:500;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--tobacco);text-decoration:none;transition:color .3s;}
 .foot-social a:hover{color:var(--sangre);}
