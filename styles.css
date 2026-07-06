@@ -1104,3 +1104,27 @@ footer{
   .news-inner{max-width:440px;}
   .menu-list a{padding:0.7rem 0;}
 }
+
+/* ════════════════════════════════════════════════════════════
+   v6 — RESTRUCTURE: unified footer, contact page, WhatsApp-forward
+   ════════════════════════════════════════════════════════════ */
+.news-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.05rem;color:var(--tobacco);margin-bottom:1.6rem;}
+.news-copy{margin-top:1.7rem;font-family:'Inter',sans-serif;font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--tobacco);opacity:0.55;}
+.news-social a.primary{color:var(--sangre);}
+
+/* Contact — WhatsApp presented as the easiest way in */
+.wa-btn{display:inline-flex;align-items:center;gap:0.7rem;background:#2E7D46;color:#F1E8D5;font-family:'Inter',sans-serif;font-weight:500;font-size:0.72rem;letter-spacing:0.16em;text-transform:uppercase;padding:1.1rem 2.3rem;border-radius:44px;text-decoration:none;transition:background .3s,transform .2s;}
+.wa-btn:hover{background:#256B3C;transform:translateY(-2px);}
+.wa-btn svg{width:20px;height:20px;fill:#F1E8D5;}
+.contact-or{font-family:'Inter',sans-serif;font-weight:500;font-size:0.62rem;letter-spacing:0.24em;text-transform:uppercase;color:var(--tobacco);margin:2.4rem 0 1.3rem;}
+.contact-form{max-width:520px;margin:0 auto;display:flex;flex-direction:column;gap:1rem;text-align:left;}
+.contact-form .field label{font-family:'Inter',sans-serif;font-weight:500;font-size:0.6rem;letter-spacing:0.24em;text-transform:uppercase;color:var(--sienna);margin-bottom:0.4rem;display:block;}
+.contact-form input,.contact-form textarea{width:100%;border:1px solid var(--bone-line);background:var(--aged);padding:0.9rem 1rem;font-family:'Inter',sans-serif;font-weight:300;font-size:0.92rem;color:var(--cacao);}
+.contact-form textarea{min-height:130px;resize:vertical;}
+.contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:var(--sienna);}
+.contact-form button{align-self:flex-start;margin-top:0.4rem;}
+
+/* Offerings / future lists */
+.future-list{display:flex;flex-wrap:wrap;gap:0.8rem;justify-content:center;max-width:760px;margin:1.6rem auto 0;}
+.future-list span{font-family:'Cormorant Garamond',serif;font-size:1.02rem;color:var(--tobacco);border:1px solid var(--bone-line);background:var(--aged);padding:0.55rem 1.3rem;border-radius:2px;}
+.contact-note{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.05rem;color:var(--tobacco);}
