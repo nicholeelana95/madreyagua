@@ -58,11 +58,11 @@ h1 em,h2 em,h3 em{font-style:italic;}
 /* ---- Top bar ---- */
 .topbar{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content:space-between;align-items:center;padding:1rem 1.05rem;pointer-events:none;}
 .topbar .right{display:flex;align-items:center;gap:.6rem;}
-.circle{pointer-events:auto;width:46px;height:46px;border-radius:50%;background:var(--nav);border:none;display:flex;align-items:center;justify-content:center;text-decoration:none;transition:background .3s;}
-.circle:hover{background:#3B4A34;}
+.circle{pointer-events:auto;width:46px;height:46px;border-radius:50%;background:var(--sienna);border:none;display:flex;align-items:center;justify-content:center;text-decoration:none;transition:background .3s;}
+.circle:hover{background:#853E20;}
 .circle svg{width:19px;height:19px;stroke:var(--bone);stroke-width:1.6;fill:none;}
-.langtoggle{pointer-events:auto;background:var(--nav);color:var(--bone);border:none;border-radius:44px;padding:.62rem .85rem;font-family:var(--ui);font-size:.62rem;letter-spacing:.1em;display:inline-flex;align-items:center;gap:.35rem;transition:background .3s;}
-.langtoggle:hover{background:#3B4A34;}
+.langtoggle{pointer-events:auto;background:var(--sienna);color:var(--bone);border:none;border-radius:44px;padding:.62rem .85rem;font-family:var(--ui);font-size:.62rem;letter-spacing:.1em;display:inline-flex;align-items:center;gap:.35rem;transition:background .3s;}
+.langtoggle:hover{background:#853E20;}
 .langtoggle .lg{opacity:.4;transition:opacity .25s;}
 .langtoggle .lg-en{opacity:1;}
 .langtoggle .lg-sep{opacity:.4;}
@@ -88,7 +88,7 @@ html[lang="es"] .langtoggle .lg-es{opacity:1;}
 .hero-sub{font-family:var(--ui);font-weight:500;font-size:.72rem;letter-spacing:.36em;text-transform:uppercase;color:var(--tobacco);margin:1.4rem 0 1.9rem;}
 .hero-tag{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.15rem,4.6vw,1.55rem);line-height:1.85;color:var(--cacao);}
 .hero .btn{margin-top:2.4rem;}
-.hero-scroll{position:absolute;bottom:1.4rem;left:50%;transform:translateX(-50%);color:var(--sangre);}
+.hero-scroll{display:inline-block;margin-top:1.7rem;color:var(--sangre);}
 .hero-scroll svg{width:20px;height:20px;stroke:var(--sangre);stroke-width:1.5;fill:none;animation:bob 2.4s ease-in-out infinite;}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
 
