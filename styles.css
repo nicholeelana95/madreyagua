@@ -96,10 +96,10 @@ html[lang="es"] .langtoggle .lg-es{opacity:1;}
 
 /* ---- Homepage image cards ---- */
 .cards{display:flex;flex-direction:column;}
-.card{position:relative;display:flex;align-items:flex-end;min-height:56svh;background-color:var(--card,#3A2417);background-size:cover;background-position:center;text-decoration:none;overflow:hidden;}
-.card::after{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(to top,rgba(20,16,12,.74) 0%,rgba(20,16,12,.12) 55%,rgba(20,16,12,.30) 100%);transition:background .4s;}
-.card:hover::after{background:linear-gradient(to top,rgba(20,16,12,.66) 0%,rgba(20,16,12,.06) 55%,rgba(20,16,12,.24) 100%);}
-.card-inner{position:relative;z-index:2;display:flex;align-items:baseline;gap:1rem;width:100%;padding:2rem 1.6rem;}
+.card{position:relative;display:flex;align-items:center;min-height:150px;background-color:var(--card,#3A2417);background-size:cover;background-position:center;text-decoration:none;overflow:hidden;}
+.card::after{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(to right,rgba(20,16,12,.68) 0%,rgba(20,16,12,.30) 58%,rgba(20,16,12,.42) 100%);transition:background .4s;}
+.card:hover::after{background:linear-gradient(to right,rgba(20,16,12,.60) 0%,rgba(20,16,12,.22) 58%,rgba(20,16,12,.34) 100%);}
+.card-inner{position:relative;z-index:2;display:flex;align-items:baseline;gap:1rem;width:100%;padding:1.5rem 1.6rem;}
 .card-num{font-family:var(--serif);font-style:italic;font-size:1.4rem;color:var(--maize);opacity:.9;}
 .card-title{flex:1;font-family:var(--ui);font-weight:500;font-size:clamp(1.5rem,6vw,2rem);letter-spacing:.14em;text-transform:uppercase;color:var(--bone);}
 .card-arrow{font-family:var(--ui);font-size:1.3rem;color:var(--maize);transition:transform .3s;}
@@ -226,8 +226,8 @@ html[lang="es"] .lang-es{display:inline;}
   .topbar{padding:1.4rem 1.8rem;}
   .circle{width:52px;height:52px;}
   .circle svg{width:21px;height:21px;}
-  .card{min-height:64vh;}
-  .card-inner{padding:3rem 3rem;}
+  .card{min-height:220px;}
+  .card-inner{padding:1.8rem 3rem;}
   .section{padding:6rem 2rem;}
   .grid{grid-template-columns:repeat(3,1fr);gap:.8rem;}
   .phero{padding:11rem 2rem 4rem;}
