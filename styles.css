@@ -95,8 +95,8 @@ html[lang="es"] .langtoggle .lg-es{opacity:1;}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
 
 /* ---- Homepage image cards ---- */
-.cards{display:flex;flex-direction:column;}
-.card{position:relative;display:flex;align-items:center;min-height:150px;background-color:var(--card,#3A2417);background-size:cover;background-position:center;text-decoration:none;overflow:hidden;}
+.cards{display:flex;flex-direction:column;height:100svh;}
+.card{position:relative;display:flex;align-items:center;flex:1 1 0;min-height:0;background-color:var(--card,#3A2417);background-size:cover;background-position:center;text-decoration:none;overflow:hidden;}
 .card::after{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(to right,rgba(20,16,12,.68) 0%,rgba(20,16,12,.30) 58%,rgba(20,16,12,.42) 100%);transition:background .4s;}
 .card:hover::after{background:linear-gradient(to right,rgba(20,16,12,.60) 0%,rgba(20,16,12,.22) 58%,rgba(20,16,12,.34) 100%);}
 .card-inner{position:relative;z-index:2;display:flex;align-items:baseline;gap:1rem;width:100%;padding:1.5rem 1.6rem;}
@@ -226,7 +226,6 @@ html[lang="es"] .lang-es{display:inline;}
   .topbar{padding:1.4rem 1.8rem;}
   .circle{width:52px;height:52px;}
   .circle svg{width:21px;height:21px;}
-  .card{min-height:220px;}
   .card-inner{padding:1.8rem 3rem;}
   .section{padding:6rem 2rem;}
   .grid{grid-template-columns:repeat(3,1fr);gap:.8rem;}
