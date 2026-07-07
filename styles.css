@@ -82,7 +82,7 @@ html[lang="es"] .langtoggle .lg-es{opacity:1;}
 .menu-foot .langtoggle{margin-left:auto;}
 
 /* ---- Homepage hero ---- */
-.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:6rem 1.5rem 3.5rem;background:var(--bone);position:relative;}
+.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:6rem 1.5rem 3.5rem;background-color:var(--bone);background-image:url('images/hero.jpg');background-size:cover;background-position:center;position:relative;}
 .hero-sun{width:30px;height:30px;stroke:var(--sienna);stroke-width:1.4;fill:none;margin-bottom:1.4rem;}
 .hero-title{font-family:var(--serif);font-weight:400;font-size:clamp(3.4rem,17vw,6.2rem);line-height:.9;letter-spacing:-.01em;color:var(--sangre);text-transform:lowercase;}
 .hero-sub{font-family:var(--ui);font-weight:500;font-size:.72rem;letter-spacing:.36em;text-transform:uppercase;color:var(--tobacco);margin:1.4rem 0 1.9rem;}
@@ -282,3 +282,6 @@ html[lang="es"] .lang-es{display:inline;}
   .ocard-img{height:240px;}
   .gallery{grid-template-columns:repeat(3,1fr);}
 }
+
+/* ---- Homepage bridge band (shares the hero texture) ---- */
+.bridge{background-color:var(--bone);background-image:url('images/hero.jpg');background-size:cover;background-position:center;}
