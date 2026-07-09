@@ -61,8 +61,8 @@ h1 em,h2 em,h3 em{font-style:italic;}
 .circle{pointer-events:auto;width:46px;height:46px;border-radius:50%;background:var(--sangre);border:none;display:flex;align-items:center;justify-content:center;text-decoration:none;transition:background .3s;}
 .circle:hover{background:#6E2819;}
 .circle svg{width:19px;height:19px;stroke:var(--bone);stroke-width:1.6;fill:none;}
-.langtoggle{pointer-events:auto;background:var(--sienna);color:var(--bone);border:none;border-radius:44px;padding:.62rem .85rem;font-family:var(--ui);font-size:.62rem;letter-spacing:.1em;display:inline-flex;align-items:center;gap:.35rem;transition:background .3s;}
-.langtoggle:hover{background:#853E20;}
+.langtoggle{pointer-events:auto;background:var(--sangre);color:var(--bone);border:none;border-radius:44px;padding:.62rem .85rem;font-family:var(--ui);font-size:.62rem;letter-spacing:.1em;display:inline-flex;align-items:center;gap:.35rem;transition:background .3s;}
+.langtoggle:hover{background:#6E2819;}
 .langtoggle .lg{opacity:.4;transition:opacity .25s;}
 .langtoggle .lg-en{opacity:1;}
 .langtoggle .lg-sep{opacity:.4;}
@@ -230,7 +230,7 @@ html[lang="es"] .lang-es{display:inline;}
   .circle svg{width:21px;height:21px;}
   .hero{grid-template-columns:1.02fr 1fr;}
   .hero-col--text{padding:6rem 3rem 4rem 4.5rem;}
-  .hero-col--media{display:block;background-image:url('images/hero-collage.png');background-size:cover;background-position:center right;}
+  .hero-col--media{display:block;background-image:url('images/hero-collage.jpg');background-size:cover;background-position:center right;}
   .card-inner{padding:1.8rem 3rem;}
   .section{padding:6rem 2rem;}
   .grid{grid-template-columns:repeat(3,1fr);gap:.8rem;}
@@ -289,3 +289,7 @@ html[lang="es"] .lang-es{display:inline;}
 
 /* ---- Homepage bridge band (shares the hero texture) ---- */
 .bridge{background-color:var(--bone);background-image:url('images/hero.jpg');background-size:cover;background-position:center;}
+
+/* ---- Torn-paper transition into the bridge band ---- */
+.bridge{position:relative;}
+.bridge::before{content:'';position:absolute;left:0;right:0;bottom:100%;height:clamp(34px,7vw,86px);background:url('images/torn-paper.png') bottom center/100% 100% no-repeat;pointer-events:none;}
