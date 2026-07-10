@@ -292,4 +292,4 @@ html[lang="es"] .lang-es{display:inline;}
 
 /* ---- Torn-paper transition into the bridge band ---- */
 .bridge{position:relative;}
-.bridge::before{content:'';position:absolute;left:0;right:0;bottom:100%;height:clamp(34px,7vw,86px);background:url('images/torn-paper.png') bottom center/100% 100% no-repeat;pointer-events:none;}
+.bridge::before{content:'';position:absolute;left:0;right:0;bottom:100%;height:clamp(34px,7vw,86px);background:url('images/torn-paper.png') bottom center/100% 100% no-repeat;z-index:3;pointer-events:none;}
