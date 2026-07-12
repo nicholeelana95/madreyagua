@@ -230,7 +230,7 @@ html[lang="es"] .lang-es{display:inline;}
   .circle svg{width:21px;height:21px;}
   .hero{grid-template-columns:1.02fr 1fr;}
   .hero-col--text{padding:6rem 3rem 4rem 4.5rem;}
-  .hero-col--media{display:block;background-image:url('images/hero-collage.jpg');background-size:cover;background-position:center right;}
+  .hero-col--media{display:block;background-image:url('images/hero-collage-v2.webp');background-size:cover;background-position:center top;}
   .card-inner{padding:1.8rem 3rem;}
   .section{padding:6rem 2rem;}
   .grid{grid-template-columns:repeat(3,1fr);gap:.8rem;}
