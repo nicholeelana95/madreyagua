@@ -84,7 +84,7 @@ html[lang="es"] .langtoggle .lg-es{opacity:1;}
 /* ---- Homepage hero ---- */
 .hero{min-height:100svh;display:grid;grid-template-columns:1fr;background-color:var(--bone);background-image:url('images/hero.jpg');background-size:cover;background-position:center;position:relative;}
 .hero-col--text{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;text-align:left;padding:6rem 1.8rem 4rem;}
-.hero-col--media{display:none;}
+.hero-col--media{display:block;min-height:clamp(340px,60vh,560px);background-image:url('images/hero-collage-v2.webp');background-size:cover;background-position:center top;}
 .hero-sun{width:30px;height:30px;stroke:var(--sienna);stroke-width:1.4;fill:none;margin-bottom:1.4rem;}
 .hero-title{font-family:var(--serif);font-weight:400;font-size:clamp(3.4rem,17vw,6.2rem);line-height:.9;letter-spacing:-.01em;color:var(--sangre);text-transform:lowercase;}
 .hero-sub{font-family:var(--ui);font-weight:500;font-size:.72rem;letter-spacing:.36em;text-transform:uppercase;color:var(--tobacco);margin:1.4rem 0 1.9rem;}
