@@ -214,6 +214,9 @@ html[lang="es"] .langtoggle .lg-es{opacity:1;}
 .foot-social{display:flex;justify-content:center;gap:1.5rem;margin-top:1.8rem;}
 .foot-social a{font-family:var(--ui);font-weight:500;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--tobacco);text-decoration:none;transition:color .3s;}
 .foot-social a:hover{color:var(--sangre);}
+/* ---- Social icon sizing ---- */
+.menu-foot a,.foot-social a{display:inline-flex;align-items:center;justify-content:center;}
+.menu-foot a svg,.foot-social a svg{width:22px;height:22px;display:block;}
 .foot-copy{margin-top:1.7rem;font-family:var(--ui);font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:var(--tobacco);opacity:.5;}
 
 /* ---- Language show/hide ---- */
