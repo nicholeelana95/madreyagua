@@ -193,7 +193,7 @@ html[lang="es"] .langtoggle .lg-es{opacity:1;}
 .wa-subtle a:hover{color:var(--sangre);border-color:var(--sangre);}
 
 /* ---- Footer ---- */
-.foot{background:var(--paper);border-top:1px solid var(--line);padding:4rem 1.5rem 3rem;text-align:center;}
+.foot{background:var(--paper);padding:4rem 1.5rem 3rem;text-align:center;}
 .foot-in{max-width:560px;margin:0 auto;}
 .foot-sun{width:26px;height:26px;stroke:var(--sienna);stroke-width:1.4;fill:none;margin:0 auto 1.2rem;}
 .foot h2{font-family:var(--ui);font-weight:500;font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--tobacco);}
