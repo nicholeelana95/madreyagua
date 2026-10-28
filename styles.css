@@ -365,3 +365,15 @@ html[lang="es"] .lang-es{display:inline;}
 .held{max-width:600px;margin:1.4rem auto 0;list-style:none;padding:0;text-align:left;}
 .held li{position:relative;padding-left:1.4rem;margin:.65rem 0;font-family:var(--body);font-size:.88rem;line-height:1.75;color:var(--cacao);}
 .held li::before{content:'';position:absolute;left:0;top:.72em;width:5px;height:5px;border-radius:50%;background:var(--sienna);}
+
+
+/* ======== Booking page (Cal.com embed) ======== */
+.bookwrap{max-width:1040px;margin:0 auto;}
+.cal-inline{width:100%;min-height:720px;height:78vh;overflow:auto;border:1px solid var(--line);border-radius:10px;background:var(--paper);}
+@media (min-width:768px){.cal-inline{min-height:760px;}}
+
+/* --- tier Book deep-link --- */
+.tier-book{display:inline-block;margin-top:1.1rem;font-family:var(--ui);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sienna);text-decoration:none;font-weight:600;border-bottom:1px solid transparent;transition:border-color .2s ease;}
+.tier-book:hover{border-color:var(--sienna);}
+.tier--deep .tier-book{color:var(--sangre);}
+.tier--deep .tier-book:hover{border-color:var(--sangre);}
