@@ -396,3 +396,6 @@ html[lang="es"] .lang-es{display:inline;}
 .cta .waitlist .field label{color:var(--bone);}
 .cta .waitlist .btn{align-self:center;margin-top:.7rem;}
 .cta .form-note{color:var(--bone);font-style:italic;}
+
+/* --- spacing for multi-paragraph tiers (Thirteen Moons) --- */
+.tier p + p{margin-top:.75rem;}
