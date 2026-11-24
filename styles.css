@@ -399,3 +399,25 @@ html[lang="es"] .lang-es{display:inline;}
 
 /* --- spacing for multi-paragraph tiers (Thirteen Moons) --- */
 .tier p + p{margin-top:.75rem;}
+
+/* --- Culinary: offering headers, exchange, Fed by the Fire --- */
+.off-head{text-align:center;margin-bottom:1.1rem;}
+.off-head .eyebrow{display:block;margin-bottom:.5rem;}
+.off-tag{text-align:center;font-family:var(--serif);font-style:italic;font-size:1.15rem;line-height:1.6;color:var(--tobacco);max-width:48ch;margin:0 auto 1.9rem;}
+.exchange{max-width:440px;margin:2rem auto;text-align:center;}
+.exchange .eyebrow{display:block;margin-bottom:.7rem;}
+.exchange ul{list-style:none;padding:0;margin:0;}
+.exchange li{font-family:var(--body);font-size:.92rem;line-height:2;color:var(--cacao);}
+.exchange b{color:var(--sienna);font-weight:600;}
+.section.hearth{background:#F6EDD9;}
+.pkgs{display:flex;flex-direction:column;gap:1.4rem;margin-top:2rem;}
+.pkg{background:var(--paper);border-top:3px solid var(--maize);border-radius:9px;padding:1.5rem 1.6rem;box-shadow:0 1px 4px rgba(58,36,23,.06);text-align:left;}
+.pkg-name{font-family:var(--serif);font-weight:500;font-size:1.55rem;color:var(--cacao);margin:0;}
+.pkg-meta{display:block;font-family:var(--ui);font-weight:500;font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:#9a8b78;margin:.35rem 0 .15rem;}
+.pkg-price{display:block;font-family:var(--ui);font-weight:600;font-size:.82rem;color:var(--sienna);margin-bottom:.9rem;}
+.pkg p{font-family:var(--body);font-size:.86rem;line-height:1.75;color:var(--tobacco);margin:0 0 .7rem;}
+.pkg-inc{display:block;font-family:var(--ui);font-weight:600;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sienna);margin:.5rem 0 .5rem;}
+.pkg ul{list-style:none;padding:0;margin:0;}
+.pkg li{position:relative;padding-left:1.1rem;font-family:var(--body);font-size:.85rem;line-height:1.75;color:var(--tobacco);}
+.pkg li::before{content:"\00b7";position:absolute;left:.25rem;color:var(--maize);font-weight:700;}
+@media (min-width:720px){.pkgs{flex-direction:row;}.pkg{flex:1;}}
