@@ -1,5 +1,5 @@
 /* ============================================================
-   MADRE Y AGUA — script.js
+   MADRE Y AGUA : script.js
    Menu · language toggle (persists) · reveal · Flodesk newsletter · contact form
    ============================================================ */
 (function () {
@@ -55,7 +55,7 @@
     });
   }
 
-  /* ---- Contact form — Formspree (background submit, no page reload) ---- */
+  /* ---- Contact form: Formspree (background submit, no page reload) ---- */
   var cf = document.querySelector('.contact-form');
   if (cf) {
     cf.addEventListener('submit', function (e) {

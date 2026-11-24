@@ -1,5 +1,5 @@
 /* ============================================================
-   MADRE Y AGUA — styles.css
+   MADRE Y AGUA : styles.css
    One clean stylesheet. Mobile-first. EN/ES built in.
    ============================================================ */
 
@@ -21,8 +21,8 @@ a{color:inherit;}
   --indigo:#34507A;
   --forest:#3A4A2E;
   --tobacco:#6E4A2E;
-  --bone:#F1E8D5;     /* cream — accents on dark bands */
-  --paper:#ffffff;    /* page background — white */
+  --bone:#F1E8D5;     /* cream: accents on dark bands */
+  --paper:#ffffff;    /* page background: white */
   --mist:#E7EAE6;
   --line:rgba(58,36,23,.14);
   --nav:#28322A;      /* dark green nav circles */
@@ -114,7 +114,7 @@ html[lang="es"] .langtoggle .lg-es{opacity:1;}
 .card-title{flex:1;font-family:var(--ui);font-weight:500;font-size:clamp(1.5rem,6vw,2rem);letter-spacing:.14em;text-transform:uppercase;color:var(--bone);}
 .card-arrow{font-family:var(--ui);font-size:1.3rem;color:var(--maize);transition:transform .3s;}
 .card:hover .card-arrow{transform:translateX(6px);}
-/* Replace-me backgrounds — drop the matching file into /images */
+/* Replace-me backgrounds: drop the matching file into /images */
 .card--about{background-image:url('images/about.jpg');--wash:138,51,34;}
 .card--offerings{background-image:url('images/offerings.jpg');--wash:58,74,46;}
 .card--stories{background-image:url('images/stories.jpg');--wash:31,90,99;}
