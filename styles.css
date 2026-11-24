@@ -390,3 +390,9 @@ html[lang="es"] .lang-es{display:inline;}
 .collab a:hover{border-color:var(--sienna);}
 /* --- tier soft note (culinary, price shown at booking) --- */
 .tier-note{display:block;margin-top:.6rem;font-family:var(--serif);font-style:italic;font-size:.82rem;color:#9a8b78;}
+
+/* --- Bridge waitlist form on the cta band --- */
+.cta .waitlist{max-width:430px;margin:1.9rem auto 0;}
+.cta .waitlist .field label{color:var(--bone);}
+.cta .waitlist .btn{align-self:center;margin-top:.7rem;}
+.cta .form-note{color:var(--bone);font-style:italic;}
