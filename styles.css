@@ -29,10 +29,16 @@ a{color:inherit;}
   --serif:'Cormorant Garamond',Georgia,serif;
   --body:'Libre Baskerville',Georgia,serif;
   --ui:'Inter',system-ui,sans-serif;
+  --turquoise:#76C4C8;  /* water accent */
+  --coral:#E9625C;      /* warmth accent */
+  --lw:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27760%27%20height%3D%27760%27%3E%3Cfilter%20id%3D%27lw%27%3E%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.009%200.013%27%20numOctaves%3D%274%27%20seed%3D%2714%27%20stitchTiles%3D%27stitch%27%2F%3E%3CfeColorMatrix%20type%3D%27saturate%27%20values%3D%270%27%2F%3E%3CfeComponentTransfer%3E%3CfeFuncR%20type%3D%27linear%27%20slope%3D%270.09%27%20intercept%3D%270.90%27%2F%3E%3CfeFuncG%20type%3D%27linear%27%20slope%3D%270.09%27%20intercept%3D%270.89%27%2F%3E%3CfeFuncB%20type%3D%27linear%27%20slope%3D%270.09%27%20intercept%3D%270.87%27%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3Crect%20width%3D%27760%27%20height%3D%27760%27%20filter%3D%27url%28%23lw%29%27%2F%3E%3C%2Fsvg%3E");
+  --lw-light:#FAF7F1;   /* limewash: lightest warm white */
+  --lw-cream:#F1E8D5;   /* limewash: deeper cream band (was grey) */
+  --lw-warm:#F3E7CF;    /* limewash: warm cream (hearth) */
 }
 
 body{
-  background:var(--paper);
+  background:var(--lw-light);
   color:var(--cacao);
   font-family:var(--body);
   line-height:1.7;
@@ -122,15 +128,15 @@ html[lang="es"] .langtoggle .lg-es{opacity:1;}
 .card--community{background-image:url('images/community.jpg');--wash:158,74,40;}
 
 /* ---- Interior page hero ---- */
-.phero{padding:8.5rem 1.5rem 3rem;text-align:center;background:var(--paper);}
+.phero{padding:8.5rem 1.5rem 3rem;text-align:center;background-color:var(--lw-light);background-image:var(--lw);background-size:760px 760px;}
 .phero-in{max-width:760px;margin:0 auto;}
 .phero h1{font-size:clamp(2.6rem,9vw,4.4rem);margin:.7rem 0 1.2rem;}
 .phero .lede{max-width:60ch;margin:0 auto;}
 
 /* ---- Sections ---- */
 .section{padding:4rem 1.5rem;}
-.section.bone{background:var(--paper);}
-.section.mist{background:var(--mist);}
+.section.bone{background-color:var(--lw-light);background-image:var(--lw);background-size:760px 760px;}
+.section.mist{background-color:var(--lw-cream);background-image:var(--lw);background-size:760px 760px;}
 .section.center,.center{text-align:center;}
 .wrap{max-width:1000px;margin:0 auto;}
 .wrap-narrow{max-width:680px;margin:0 auto;}
@@ -191,7 +197,7 @@ html[lang="es"] .langtoggle .lg-es{opacity:1;}
 .field label{display:block;font-family:var(--ui);font-weight:500;font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;color:var(--sienna);margin-bottom:.4rem;}
 .field input,.field textarea{width:100%;border:1px solid var(--line);background:var(--paper);padding:.9rem 1rem;font-family:var(--ui);font-weight:300;font-size:.92rem;color:var(--cacao);}
 .field textarea{min-height:140px;resize:vertical;}
-.field input:focus,.field textarea:focus{outline:none;border-color:var(--sienna);}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--turquoise);}
 .contact-form .btn{align-self:flex-start;margin-top:.3rem;}
 .form-note{font-family:var(--serif);font-style:italic;font-size:1rem;color:var(--tobacco);margin-top:.4rem;}
 .wa-subtle{text-align:center;margin-top:2.4rem;font-family:var(--ui);font-size:.72rem;letter-spacing:.04em;color:var(--tobacco);}
@@ -206,9 +212,9 @@ html[lang="es"] .langtoggle .lg-es{opacity:1;}
 .cond-note a:hover{color:var(--sangre);border-color:var(--sangre);}
 
 /* ---- Footer ---- */
-.foot{background:var(--paper);padding:4rem 1.5rem 3rem;text-align:center;}
+.foot{background-color:var(--lw-light);background-image:var(--lw);background-size:760px 760px;padding:4rem 1.5rem 3rem;text-align:center;}
 .foot-in{max-width:560px;margin:0 auto;}
-.foot-sun{width:26px;height:26px;stroke:var(--sienna);stroke-width:1.4;fill:none;margin:0 auto 1.2rem;}
+.foot-sun{width:26px;height:26px;stroke:var(--coral);stroke-width:1.4;fill:none;margin:0 auto 1.2rem;}
 .foot h2{font-family:var(--ui);font-weight:500;font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--tobacco);}
 .foot-sub{font-family:var(--serif);font-style:italic;font-size:1.05rem;color:var(--tobacco);margin:.7rem 0 1.6rem;}
 /* Flodesk newsletter form sits inside the footer */
@@ -256,9 +262,11 @@ html[lang="es"] .lang-es{display:inline;}
 
 /* ---- Dark-mode lock: keep the warm cream look everywhere ---- */
 @media (prefers-color-scheme:dark){
-  html,body{background:var(--paper)!important;color:var(--cacao);}
-  .hero,.phero,.section.bone,.foot,.gcard,.future span,.field input,.field textarea{background-color:var(--paper)!important;}
-  .section.mist{background-color:var(--mist)!important;}
+  html,body{background:var(--lw-light)!important;color:var(--cacao);}
+  .phero,.section.bone,.foot{background-color:var(--lw-light)!important;}
+  .hero,.gcard,.future span,.field input,.field textarea{background-color:var(--paper)!important;}
+  .section.mist{background-color:var(--lw-cream)!important;}
+  .section.hearth{background-color:var(--lw-warm)!important;}
   .stmt{background-color:var(--cacao)!important;}
   .cta{background-color:var(--forest)!important;}
 }
@@ -268,7 +276,7 @@ html[lang="es"] .lang-es{display:inline;}
 .tslide{display:none;}
 .tslide.is-active{display:block;animation:tfade .5s ease;}
 .tquote{font-family:var(--serif);font-style:italic;font-size:clamp(1.12rem,2.8vw,1.42rem);line-height:1.8;color:var(--cacao);}
-.tcite{margin-top:1.4rem;font-family:var(--ui);font-weight:500;font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sienna);}
+.tcite{margin-top:1.4rem;font-family:var(--ui);font-weight:500;font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--coral);}
 .tnav{flex:none;width:44px;height:44px;border-radius:50%;background:transparent;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .3s,border-color .3s;}
 .tnav:hover{background:var(--paper);border-color:var(--sienna);}
 .tnav svg{width:17px;height:17px;stroke:var(--sienna);stroke-width:1.7;fill:none;}
@@ -356,7 +364,7 @@ html[lang="es"] .lang-es{display:inline;}
 .crossings{max-width:640px;margin:0 auto;display:grid;gap:.85rem;}
 .crossing{border:1px solid var(--line);border-radius:9px;padding:1.2rem 1.4rem;text-align:left;background:var(--paper);}
 .crossing--red{border-left:3px solid var(--sangre);}
-.crossing--white{border-left:3px solid var(--clay);}
+.crossing--white{border-left:3px solid var(--turquoise);}
 .crossing b{font-family:var(--serif);font-weight:500;font-size:1.3rem;color:var(--cacao);}
 .crossing .cdir{font-family:var(--ui);font-weight:500;font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:#9a8b78;margin-left:.5rem;}
 .crossing p{font-family:var(--body);font-size:.86rem;line-height:1.75;color:var(--tobacco);margin:.4rem 0 0;}
@@ -371,7 +379,7 @@ html[lang="es"] .lang-es{display:inline;}
 /* The Bridge: what is held */
 .held{max-width:600px;margin:1.4rem auto 0;list-style:none;padding:0;text-align:left;}
 .held li{position:relative;padding-left:1.4rem;margin:.65rem 0;font-family:var(--body);font-size:.88rem;line-height:1.75;color:var(--cacao);}
-.held li::before{content:'';position:absolute;left:0;top:.72em;width:5px;height:5px;border-radius:50%;background:var(--sienna);}
+.held li::before{content:'';position:absolute;left:0;top:.72em;width:5px;height:5px;border-radius:50%;background:var(--turquoise);}
 
 
 /* ======== Booking page (Cal.com embed) ======== */
@@ -389,7 +397,7 @@ html[lang="es"] .lang-es{display:inline;}
 .ocard--culinary .ocard-img{background-color:var(--clay);background-image:radial-gradient(circle at 32% 34%,rgba(241,232,213,.24),rgba(241,232,213,0) 50%);}
 /* --- inquiry form select --- */
 .field select{width:100%;border:1px solid var(--line);background:var(--paper);padding:.9rem 1rem;font-family:var(--ui);font-weight:300;font-size:.92rem;color:var(--cacao);border-radius:0;-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%239E4A28' stroke-width='1.5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center;}
-.field select:focus{outline:none;border-color:var(--sienna);}
+.field select:focus{outline:none;border-color:var(--turquoise);}
 /* --- collaborate invite --- */
 .collab{max-width:640px;margin:2.6rem auto 0;text-align:center;}
 .collab p{font-family:var(--serif);font-style:italic;font-size:1.08rem;line-height:1.6;color:var(--tobacco);margin:0 0 .55rem;}
@@ -416,9 +424,9 @@ html[lang="es"] .lang-es{display:inline;}
 .exchange ul{list-style:none;padding:0;margin:0;}
 .exchange li{font-family:var(--body);font-size:.92rem;line-height:2;color:var(--cacao);}
 .exchange b{color:var(--sienna);font-weight:600;}
-.section.hearth{background:#F6EDD9;}
+.section.hearth{background-color:var(--lw-warm);background-image:var(--lw);background-size:760px 760px;}
 .pkgs{display:flex;flex-direction:column;gap:1.4rem;margin-top:2rem;}
-.pkg{background:var(--paper);border-top:3px solid var(--maize);border-radius:9px;padding:1.5rem 1.6rem;box-shadow:0 1px 4px rgba(58,36,23,.06);text-align:left;}
+.pkg{background:var(--paper);border-top:3px solid var(--coral);border-radius:9px;padding:1.5rem 1.6rem;box-shadow:0 1px 4px rgba(58,36,23,.06);text-align:left;}
 .pkg-name{font-family:var(--serif);font-weight:500;font-size:1.55rem;color:var(--cacao);margin:0;}
 .pkg-meta{display:block;font-family:var(--ui);font-weight:500;font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:#9a8b78;margin:.35rem 0 .15rem;}
 .pkg-price{display:block;font-family:var(--ui);font-weight:600;font-size:.82rem;color:var(--sienna);margin-bottom:.9rem;}
@@ -426,5 +434,9 @@ html[lang="es"] .lang-es{display:inline;}
 .pkg-inc{display:block;font-family:var(--ui);font-weight:600;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sienna);margin:.5rem 0 .5rem;}
 .pkg ul{list-style:none;padding:0;margin:0;}
 .pkg li{position:relative;padding-left:1.1rem;font-family:var(--body);font-size:.85rem;line-height:1.75;color:var(--tobacco);}
-.pkg li::before{content:"\00b7";position:absolute;left:.25rem;color:var(--maize);font-weight:700;}
+.pkg li::before{content:"\00b7";position:absolute;left:.25rem;color:var(--coral);font-weight:700;}
 @media (min-width:720px){.pkgs{flex-direction:row;}.pkg{flex:1;}}
+
+/* ---- text selection: water accent ---- */
+::selection{background:rgba(118,196,200,.28);}
+::-moz-selection{background:rgba(118,196,200,.28);}
