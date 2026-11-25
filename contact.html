@@ -54,7 +54,55 @@
 
 <main id="main">
 
-<section class="phero"><div class="phero-in"><h1><span class="lang-en">Invitation</span><span class="lang-es">Invitaci&oacute;n</span></h1><p class="lede"><span class="lang-en">Whether you&rsquo;re reaching out about a session, a gathering, a collaboration, or simply to introduce yourself, I&rsquo;d be honored to hear from you.</span><span class="lang-es">Ya sea que escribas por una sesión, un encuentro, una colaboración o simplemente para presentarte, será un gusto leerte. Te responderé en cuanto me sea posible.</span></p><p class="reveal" style="font-family:var(--serif);font-style:italic;font-size:clamp(1.02rem,2.6vw,1.2rem);line-height:1.8;color:var(--tobacco);margin-top:1rem;"><span class="lang-en">Share a little about what brings you here, and I&rsquo;ll be in touch as soon as I&rsquo;m able.</span><span class="lang-es">Cuéntame un poco sobre lo que te trae aquí y te responderé en cuanto me sea posible.</span></p></div></section><section class="section bone"><form class="contact-form reveal" action="https://formspree.io/f/xkolebqv" method="POST"><input type="hidden" name="_subject" value="New message from madreyagua.com"><div class="field"><label for="c-name"><span class="lang-en">Your name</span><span class="lang-es">Tu nombre</span></label><input id="c-name" type="text" name="name" autocomplete="name" required></div><div class="field"><label for="c-email"><span class="lang-en">Email</span><span class="lang-es">Correo electrónico</span></label><input id="c-email" type="email" name="email" autocomplete="email" required></div><div class="field"><label for="c-msg"><span class="lang-en">Message</span><span class="lang-es">Mensaje</span></label><textarea id="c-msg" name="message" required></textarea></div><button class="btn" type="submit"><span class="lang-en">Send</span><span class="lang-es">Enviar</span></button><p class="form-note" id="form-note" style="display:none;"><span class="lang-en">Thank you, your message has been sent. I&rsquo;ll be in touch as soon as I can.</span><span class="lang-es">Gracias, tu mensaje ha sido enviado. Te responder&eacute; en cuanto pueda.</span></p><p class="form-note" id="form-error" style="display:none;"><span class="lang-en">Something went wrong sending your message. Please write directly to madreyagua@gmail.com.</span><span class="lang-es">Algo sali&oacute; mal al enviar tu mensaje. Por favor escribe directamente a madreyagua@gmail.com.</span></p></form><p class="wa-subtle reveal"><span class="lang-en">Prefer WhatsApp? </span><span class="lang-es">&iquest;Prefieres WhatsApp? </span><a href="https://wa.me/18058536287" target="_blank" rel="noopener"><span class="lang-en">Message here.</span><span class="lang-es">Escríbeme aquí.</span></a></p></section>
+<section class="phero"><div class="phero-in"><h1><span class="lang-en">Invitation</span><span class="lang-es">Invitaci&oacute;n</span></h1><p class="lede"><span class="lang-en">Whether you&rsquo;re reaching out about a session, a gathering, a collaboration, or simply to introduce yourself, I&rsquo;d be honored to hear from you.</span><span class="lang-es">Ya sea que escribas por una sesión, un encuentro, una colaboración o simplemente para presentarte, será un gusto leerte. Te responderé en cuanto me sea posible.</span></p><p class="reveal" style="font-family:var(--serif);font-style:italic;font-size:clamp(1.02rem,2.6vw,1.2rem);line-height:1.8;color:var(--tobacco);margin-top:1rem;"><span class="lang-en">Share a little about what brings you here, and I&rsquo;ll be in touch as soon as I&rsquo;m able.</span><span class="lang-es">Cuéntame un poco sobre lo que te trae aquí y te responderé en cuanto me sea posible.</span></p></div></section><section class="section bone"><form class="contact-form reveal" action="https://formspree.io/f/xkolebqv" method="POST">
+<input type="hidden" name="_subject" value="New message from madreyagua.com">
+<div class="field"><label for="c-name"><span class="lang-en">Your name</span><span class="lang-es">Tu nombre</span></label><input id="c-name" type="text" name="name" autocomplete="name" required></div>
+<div class="field"><label for="c-email"><span class="lang-en">Email</span><span class="lang-es">Correo electrónico</span></label><input id="c-email" type="email" name="email" autocomplete="email" required></div>
+<div class="field">
+<label for="c-topic"><span class="lang-en">What brings you here?</span><span class="lang-es">¿Qué te trae por aquí?</span></label>
+<select id="c-topic" name="What brings you here">
+<option value="A general note or question" data-en="A general note or question" data-es="Una nota o pregunta general">A general note or question</option>
+<option value="Booking a session" data-section="booking" data-en="Booking a session" data-es="Reservar una sesión">Booking a session</option>
+<option value="Postpartum care" data-section="postpartum" data-en="Postpartum care" data-es="Cuidado posparto">Postpartum care</option>
+<option value="Culinary services" data-section="culinary" data-en="Culinary services" data-es="Servicios de alimentación">Culinary services</option>
+<option value="A workshop, teaching, or ceremony" data-section="gathering" data-en="A workshop, teaching, or ceremony" data-es="Un taller, enseñanza o ceremonia">A workshop, teaching, or ceremony</option>
+<option value="A collaboration or community gathering" data-section="gathering" data-en="A collaboration or community gathering" data-es="Una colaboración o encuentro comunitario">A collaboration or community gathering</option>
+<option value="Something else" data-en="Something else" data-es="Otra cosa">Something else</option>
+</select>
+<p class="form-hint"><span class="lang-en">Choose one if you like. Everything beyond your message is optional.</span><span class="lang-es">Elige una opción si quieres. Todo lo demás, más allá de tu mensaje, es opcional.</span></p>
+</div>
+<div class="cond" data-section="booking">
+<div class="field"><label for="c-session"><span class="lang-en">Which session are you interested in?</span><span class="lang-es">¿Qué sesión te interesa?</span></label>
+<select id="c-session" name="Session of interest" disabled>
+<option value="" data-en="Choose one (optional)" data-es="Elige una (opcional)">Choose one (optional)</option>
+<option value="A Listening" data-en="A Listening" data-es="Una Escucha">A Listening</option>
+<option value="A Season" data-en="A Season" data-es="Una Estación">A Season</option>
+<option value="A Threshold" data-en="A Threshold" data-es="Un Umbral">A Threshold</option>
+<option value="Thirteen Moons" data-en="Thirteen Moons" data-es="Trece Lunas">Thirteen Moons</option>
+<option value="Not sure yet" data-en="Not sure yet" data-es="Aún no estoy segura">Not sure yet</option>
+</select></div>
+<p class="cond-note"><span class="lang-en">Ready to schedule? You can <a href="book.html">book here</a>.</span><span class="lang-es">¿Lista para agendar? Puedes <a href="book.html">reservar aquí</a>.</span></p>
+</div>
+<div class="cond" data-section="postpartum">
+<div class="field"><label for="c-pp-date"><span class="lang-en">Approximate due date or birth date</span><span class="lang-es">Fecha aproximada de parto o de nacimiento</span></label><input id="c-pp-date" type="text" name="Approx. due or birth date" disabled></div>
+<div class="field"><label for="c-pp-loc"><span class="lang-en">Where would care be needed?</span><span class="lang-es">¿Dónde se necesitaría el cuidado?</span></label><input id="c-pp-loc" type="text" name="Care location" disabled></div>
+</div>
+<div class="cond" data-section="culinary">
+<div class="field"><label for="c-cu-date"><span class="lang-en">Event date or season</span><span class="lang-es">Fecha o temporada del evento</span></label><input id="c-cu-date" type="text" name="Event date or season" disabled></div>
+<div class="field"><label for="c-cu-loc"><span class="lang-en">Location</span><span class="lang-es">Lugar</span></label><input id="c-cu-loc" type="text" name="Event location" disabled></div>
+<div class="field"><label for="c-cu-guests"><span class="lang-en">Approximate number of guests</span><span class="lang-es">Número aproximado de invitados</span></label><input id="c-cu-guests" type="text" inputmode="numeric" name="Approx. guests" disabled></div>
+</div>
+<div class="cond" data-section="gathering">
+<div class="field"><label for="c-ga-nature"><span class="lang-en">The nature of the gathering</span><span class="lang-es">¿De qué se trata el encuentro?</span></label><input id="c-ga-nature" type="text" name="Nature of the gathering" disabled></div>
+<div class="field"><label for="c-ga-date"><span class="lang-en">Date or season</span><span class="lang-es">Fecha o temporada</span></label><input id="c-ga-date" type="text" name="Gathering date or season" disabled></div>
+<div class="field"><label for="c-ga-loc"><span class="lang-en">Location</span><span class="lang-es">Lugar</span></label><input id="c-ga-loc" type="text" name="Gathering location" disabled></div>
+<div class="field"><label for="c-ga-count"><span class="lang-en">Approximate number of participants</span><span class="lang-es">Número aproximado de participantes</span></label><input id="c-ga-count" type="text" inputmode="numeric" name="Approx. participants" disabled></div>
+</div>
+<div class="field"><label for="c-msg"><span class="lang-en">Message</span><span class="lang-es">Mensaje</span></label><textarea id="c-msg" name="message" required></textarea></div>
+<button class="btn" type="submit"><span class="lang-en">Send</span><span class="lang-es">Enviar</span></button>
+<p class="form-note" id="form-note" style="display:none;"><span class="lang-en">Thank you, your message has been sent. I&rsquo;ll be in touch as soon as I can.</span><span class="lang-es">Gracias, tu mensaje ha sido enviado. Te responder&eacute; en cuanto pueda.</span></p>
+<p class="form-note" id="form-error" style="display:none;"><span class="lang-en">Something went wrong sending your message. Please write directly to madreyagua@gmail.com.</span><span class="lang-es">Algo sali&oacute; mal al enviar tu mensaje. Por favor escribe directamente a madreyagua@gmail.com.</span></p>
+</form><p class="wa-subtle reveal"><span class="lang-en">Prefer WhatsApp? </span><span class="lang-es">&iquest;Prefieres WhatsApp? </span><a href="https://wa.me/18058536287" target="_blank" rel="noopener"><span class="lang-en">Message here.</span><span class="lang-es">Escríbeme aquí.</span></a></p></section>
 
 </main>
 
@@ -75,5 +123,44 @@
 </footer>
 
 <script src="script.js" defer></script>
+<script>
+/* Contact form: optional conditional sections + bilingual <option> text.
+   Hidden sections are kept disabled so their fields never reach the inbox. */
+(function () {
+  var form = document.querySelector('.contact-form');
+  if (!form) return;
+  var topic = document.getElementById('c-topic');
+  var groups = [].slice.call(form.querySelectorAll('.cond'));
+
+  function syncSections() {
+    var opt = topic.options[topic.selectedIndex];
+    var key = opt ? (opt.getAttribute('data-section') || '') : '';
+    groups.forEach(function (g) {
+      var on = key !== '' && g.getAttribute('data-section') === key;
+      g.classList.toggle('show', on);
+      [].slice.call(g.querySelectorAll('input, select, textarea')).forEach(function (el) {
+        el.disabled = !on;
+      });
+    });
+  }
+
+  function lang() { return document.documentElement.getAttribute('lang') === 'es' ? 'es' : 'en'; }
+  var opts = [].slice.call(form.querySelectorAll('option[data-en]'));
+  function syncOptionLang() {
+    var l = lang();
+    opts.forEach(function (o) {
+      var t = o.getAttribute('data-' + l);
+      if (t != null) o.textContent = t;
+    });
+  }
+
+  if (topic) topic.addEventListener('change', syncSections);
+  syncOptionLang();
+  syncSections();
+  if (window.MutationObserver) {
+    new MutationObserver(syncOptionLang).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+  }
+})();
+</script>
 </body>
 </html>

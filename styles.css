@@ -197,6 +197,13 @@ html[lang="es"] .langtoggle .lg-es{opacity:1;}
 .wa-subtle{text-align:center;margin-top:2.4rem;font-family:var(--ui);font-size:.72rem;letter-spacing:.04em;color:var(--tobacco);}
 .wa-subtle a{color:var(--forest);font-weight:500;text-decoration:none;border-bottom:1px solid var(--forest);padding-bottom:1px;}
 .wa-subtle a:hover{color:var(--sangre);border-color:var(--sangre);}
+/* --- contact: optional conditional sections --- */
+.form-hint{font-family:var(--serif);font-style:italic;font-size:.92rem;line-height:1.6;color:var(--tobacco);margin:.45rem 0 0;}
+.cond{display:none;}
+.cond.show{display:flex;flex-direction:column;gap:1rem;padding-top:.2rem;}
+.cond-note{font-family:var(--serif);font-style:italic;font-size:.92rem;line-height:1.7;color:var(--tobacco);margin:0;}
+.cond-note a{color:var(--sienna);border-bottom:1px solid var(--sienna);text-decoration:none;}
+.cond-note a:hover{color:var(--sangre);border-color:var(--sangre);}
 
 /* ---- Footer ---- */
 .foot{background:var(--paper);padding:4rem 1.5rem 3rem;text-align:center;}
