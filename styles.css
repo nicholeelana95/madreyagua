@@ -44,6 +44,9 @@ body{
   line-height:1.7;
   overflow-x:hidden;
 }
+/* ---- Homepage: plain white ground (its imagery carries the texture) ---- */
+body.home{background:var(--paper);}
+body.home .foot{background-color:var(--paper);background-image:none;}
 
 /* ---- Base type ---- */
 h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.05;color:var(--sangre);}
@@ -128,14 +131,14 @@ html[lang="es"] .langtoggle .lg-es{opacity:1;}
 .card--community{background-image:url('images/community.jpg');--wash:158,74,40;}
 
 /* ---- Interior page hero ---- */
-.phero{padding:8.5rem 1.5rem 3rem;text-align:center;background-color:var(--lw-light);background-image:var(--lw);background-size:1200px 1200px;}
+.phero{padding:8.5rem 1.5rem 3rem;text-align:center;background-color:#FDFBF7;background-image:url('images/weave-andean.webp');background-size:300px auto;background-repeat:repeat;}
 .phero-in{max-width:760px;margin:0 auto;}
 .phero h1{font-size:clamp(2.6rem,9vw,4.4rem);margin:.7rem 0 1.2rem;}
 .phero .lede{max-width:60ch;margin:0 auto;}
 
 /* ---- Sections ---- */
 .section{padding:4rem 1.5rem;}
-.section.bone{background-color:var(--lw-light);background-image:var(--lw);background-size:1200px 1200px;}
+.section.bone{background-color:#FDFBF7;background-image:url('images/weave-andean.webp');background-size:300px auto;background-repeat:repeat;}
 .section.mist{background-color:#FDFBF7;background-image:url('images/weave-andean.webp');background-size:300px auto;background-repeat:repeat;}
 .section.center,.center{text-align:center;}
 .wrap{max-width:1000px;margin:0 auto;}
@@ -146,13 +149,13 @@ html[lang="es"] .langtoggle .lg-es{opacity:1;}
 .prose .em{font-family:var(--serif);font-style:italic;font-size:1.2rem;line-height:1.75;color:var(--cacao);}
 
 /* Statement band */
-.stmt{background-color:#20160E;background-image:url('images/weave-african.webp');background-size:400px auto;background-repeat:repeat;color:var(--bone);padding:5rem 1.5rem;text-align:center;}
+.stmt{background-color:#100402;background-image:url('images/weave-african.webp');background-size:400px auto;background-repeat:repeat;color:var(--bone);padding:5rem 1.5rem;text-align:center;}
 .stmt h2{color:var(--bone);font-size:clamp(2.2rem,7vw,3.6rem);margin-bottom:1.4rem;}
 .stmt p{font-family:var(--body);font-size:.98rem;line-height:2;max-width:64ch;margin:0 auto;color:rgba(241,232,213,.86);}
 .stmt .eyebrow{color:var(--maize);margin-bottom:1.2rem;}
 
 /* ---- Deep feature bands: dark espresso + African dot-art ---- */
-.section.deep{background-color:#20160E;background-image:url('images/weave-african.webp');background-size:400px auto;background-repeat:repeat;color:var(--bone);}
+.section.deep{background-color:#100402;background-image:url('images/weave-african.webp');background-size:400px auto;background-repeat:repeat;color:var(--bone);}
 .section.deep .eyebrow{color:var(--maize);}
 .section.deep h2,.section.deep h3{color:var(--bone);}
 .section.deep p,.section.deep li{color:rgba(241,232,213,.88);}
@@ -225,7 +228,7 @@ html[lang="es"] .langtoggle .lg-es{opacity:1;}
 .cond-note a:hover{color:var(--sangre);border-color:var(--sangre);}
 
 /* ---- Footer ---- */
-.foot{background-color:var(--lw-light);background-image:var(--lw);background-size:1200px 1200px;padding:4rem 1.5rem 3rem;text-align:center;}
+.foot{background-color:#FDFBF7;background-image:url('images/weave-andean.webp');background-size:300px auto;background-repeat:repeat;padding:4rem 1.5rem 3rem;text-align:center;}
 .foot-in{max-width:560px;margin:0 auto;}
 .foot-sun{width:26px;height:26px;stroke:var(--coral);stroke-width:1.4;fill:none;margin:0 auto 1.2rem;}
 .foot h2{font-family:var(--ui);font-weight:500;font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--tobacco);}
@@ -276,15 +279,15 @@ html[lang="es"] .lang-es{display:inline;}
 /* ---- Dark-mode lock: keep the warm cream look everywhere ---- */
 @media (prefers-color-scheme:dark){
   html,body{background:var(--lw-light)!important;color:var(--cacao);}
-  .phero,.section.bone,.foot,.bridge{background-color:var(--lw-light)!important;}
-  .section.mist,.section.hearth{background-color:#FDFBF7!important;}
+  .phero,.section.bone,.section.mist,.section.hearth,.foot{background-color:#FDFBF7!important;}
+  body.home .foot,.bridge{background-color:var(--paper)!important;}
   .hero,.gcard,.future span,.field input,.field textarea{background-color:var(--paper)!important;}
-  .section.deep,.stmt{background-color:#20160E!important;}
+  .section.deep,.stmt{background-color:#100402!important;}
   .cta{background-color:var(--forest)!important;}
 }
 /* ---- Weave texture: larger scale on wider screens ---- */
 @media (min-width:900px){
-  .section.mist,.section.hearth{background-size:380px auto;}
+  .phero,.section.bone,.section.mist,.section.hearth,.foot{background-size:380px auto;}
   .section.deep,.stmt{background-size:520px auto;}
 }
 /* ---- Testimonials slider (Offerings) ---- */
@@ -330,7 +333,7 @@ html[lang="es"] .lang-es{display:inline;}
 }
 
 /* ---- Homepage bridge: tan torn-paper journal note ---- */
-.bridge{background-color:var(--lw-light);background-image:var(--lw);background-size:1200px 1200px;padding:clamp(3.2rem,10vw,6.4rem) 1.4rem;}
+.bridge{background-color:var(--paper);padding:clamp(3.2rem,10vw,6.4rem) 1.4rem;}
 .bridge .wrap-narrow{
   position:relative;max-width:580px;margin:0 auto;
   padding:clamp(2.8rem,7vw,4rem) clamp(2rem,6.5vw,3.6rem);
