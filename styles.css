@@ -31,8 +31,8 @@ a{color:inherit;}
   --ui:'Inter',system-ui,sans-serif;
   --turquoise:#76C4C8;  /* water accent */
   --coral:#E9625C;      /* warmth accent */
-  --lw:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%271200%27%20height%3D%271200%27%3E%3Cfilter%20id%3D%27lw%27%20x%3D%270%27%20y%3D%270%27%20width%3D%27100%25%27%20height%3D%27100%25%27%3E%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.01%200.015%27%20numOctaves%3D%274%27%20seed%3D%2714%27%20stitchTiles%3D%27stitch%27%2F%3E%3CfeColorMatrix%20type%3D%27saturate%27%20values%3D%270%27%2F%3E%3CfeComponentTransfer%3E%3CfeFuncR%20type%3D%27linear%27%20slope%3D%270.07%27%20intercept%3D%270.915%27%2F%3E%3CfeFuncG%20type%3D%27linear%27%20slope%3D%270.07%27%20intercept%3D%270.905%27%2F%3E%3CfeFuncB%20type%3D%27linear%27%20slope%3D%270.07%27%20intercept%3D%270.885%27%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3Crect%20width%3D%271200%27%20height%3D%271200%27%20filter%3D%27url%28%23lw%29%27%2F%3E%3C%2Fsvg%3E");
-  --lw-light:#FAF7F1;   /* limewash: lightest warm white */
+  --lw:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%271200%27%20height%3D%271200%27%3E%3Cfilter%20id%3D%27lw%27%20x%3D%270%27%20y%3D%270%27%20width%3D%27100%25%27%20height%3D%27100%25%27%3E%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.01%200.015%27%20numOctaves%3D%274%27%20seed%3D%2714%27%20stitchTiles%3D%27stitch%27%2F%3E%3CfeColorMatrix%20type%3D%27saturate%27%20values%3D%270%27%2F%3E%3CfeComponentTransfer%3E%3CfeFuncR%20type%3D%27linear%27%20slope%3D%270.06%27%20intercept%3D%270.925%27%2F%3E%3CfeFuncG%20type%3D%27linear%27%20slope%3D%270.06%27%20intercept%3D%270.925%27%2F%3E%3CfeFuncB%20type%3D%27linear%27%20slope%3D%270.06%27%20intercept%3D%270.925%27%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3Crect%20width%3D%271200%27%20height%3D%271200%27%20filter%3D%27url%28%23lw%29%27%2F%3E%3C%2Fsvg%3E");
+  --lw-light:#ffffff;   /* limewash: lightest warm white */
   --lw-cream:#F1E8D5;   /* limewash: deeper cream band (was grey) */
   --lw-warm:#F3E7CF;    /* limewash: warm cream (hearth) */
 }
@@ -136,7 +136,7 @@ html[lang="es"] .langtoggle .lg-es{opacity:1;}
 /* ---- Sections ---- */
 .section{padding:4rem 1.5rem;}
 .section.bone{background-color:var(--lw-light);background-image:var(--lw);background-size:1200px 1200px;}
-.section.mist{background-color:var(--lw-cream);background-image:var(--lw);background-size:1200px 1200px;}
+.section.mist{background-color:#FDFBF7;background-image:url('images/weave-andean.webp');background-size:300px auto;background-repeat:repeat;}
 .section.center,.center{text-align:center;}
 .wrap{max-width:1000px;margin:0 auto;}
 .wrap-narrow{max-width:680px;margin:0 auto;}
@@ -146,10 +146,23 @@ html[lang="es"] .langtoggle .lg-es{opacity:1;}
 .prose .em{font-family:var(--serif);font-style:italic;font-size:1.2rem;line-height:1.75;color:var(--cacao);}
 
 /* Statement band */
-.stmt{background:var(--cacao);color:var(--bone);padding:5rem 1.5rem;text-align:center;}
+.stmt{background-color:#20160E;background-image:url('images/weave-african.webp');background-size:400px auto;background-repeat:repeat;color:var(--bone);padding:5rem 1.5rem;text-align:center;}
 .stmt h2{color:var(--bone);font-size:clamp(2.2rem,7vw,3.6rem);margin-bottom:1.4rem;}
 .stmt p{font-family:var(--body);font-size:.98rem;line-height:2;max-width:64ch;margin:0 auto;color:rgba(241,232,213,.86);}
 .stmt .eyebrow{color:var(--maize);margin-bottom:1.2rem;}
+
+/* ---- Deep feature bands: dark espresso + African dot-art ---- */
+.section.deep{background-color:#20160E;background-image:url('images/weave-african.webp');background-size:400px auto;background-repeat:repeat;color:var(--bone);}
+.section.deep .eyebrow{color:var(--maize);}
+.section.deep h2,.section.deep h3{color:var(--bone);}
+.section.deep p,.section.deep li{color:rgba(241,232,213,.88);}
+.section.deep .tquote{color:rgba(241,232,213,.92);}
+.section.deep .tcite{color:var(--coral);}
+.section.deep .tnav{border-color:rgba(241,232,213,.28);}
+.section.deep .tnav:hover{background:rgba(241,232,213,.1);border-color:var(--maize);}
+.section.deep .tnav svg{stroke:var(--bone);}
+.section.deep .tdot{background:rgba(241,232,213,.3);}
+.section.deep .tdot.is-active{background:var(--maize);}
 
 /* Threads row */
 .threads{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem 1.6rem;margin:2rem auto 0;max-width:640px;}
@@ -264,11 +277,15 @@ html[lang="es"] .lang-es{display:inline;}
 @media (prefers-color-scheme:dark){
   html,body{background:var(--lw-light)!important;color:var(--cacao);}
   .phero,.section.bone,.foot{background-color:var(--lw-light)!important;}
+  .section.mist,.section.hearth{background-color:#FDFBF7!important;}
   .hero,.gcard,.future span,.field input,.field textarea{background-color:var(--paper)!important;}
-  .section.mist{background-color:var(--lw-cream)!important;}
-  .section.hearth{background-color:var(--lw-warm)!important;}
-  .stmt{background-color:var(--cacao)!important;}
+  .section.deep,.stmt{background-color:#20160E!important;}
   .cta{background-color:var(--forest)!important;}
+}
+/* ---- Weave texture: larger scale on wider screens ---- */
+@media (min-width:900px){
+  .section.mist,.section.hearth{background-size:380px auto;}
+  .section.deep,.stmt{background-size:520px auto;}
 }
 /* ---- Testimonials slider (Offerings) ---- */
 .tslider{position:relative;max-width:780px;margin:2.4rem auto 0;display:flex;align-items:center;gap:.8rem;}
@@ -424,7 +441,7 @@ html[lang="es"] .lang-es{display:inline;}
 .exchange ul{list-style:none;padding:0;margin:0;}
 .exchange li{font-family:var(--body);font-size:.92rem;line-height:2;color:var(--cacao);}
 .exchange b{color:var(--sienna);font-weight:600;}
-.section.hearth{background-color:var(--lw-warm);background-image:var(--lw);background-size:1200px 1200px;}
+.section.hearth{background-color:#FDFBF7;background-image:url('images/weave-andean.webp');background-size:300px auto;background-repeat:repeat;}
 .pkgs{display:flex;flex-direction:column;gap:1.4rem;margin-top:2rem;}
 .pkg{background:var(--paper);border-top:3px solid var(--coral);border-radius:9px;padding:1.5rem 1.6rem;box-shadow:0 1px 4px rgba(58,36,23,.06);text-align:left;}
 .pkg-name{font-family:var(--serif);font-weight:500;font-size:1.55rem;color:var(--cacao);margin:0;}
