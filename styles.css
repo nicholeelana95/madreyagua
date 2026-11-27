@@ -276,7 +276,7 @@ html[lang="es"] .lang-es{display:inline;}
 /* ---- Dark-mode lock: keep the warm cream look everywhere ---- */
 @media (prefers-color-scheme:dark){
   html,body{background:var(--lw-light)!important;color:var(--cacao);}
-  .phero,.section.bone,.foot{background-color:var(--lw-light)!important;}
+  .phero,.section.bone,.foot,.bridge{background-color:var(--lw-light)!important;}
   .section.mist,.section.hearth{background-color:#FDFBF7!important;}
   .hero,.gcard,.future span,.field input,.field textarea{background-color:var(--paper)!important;}
   .section.deep,.stmt{background-color:#20160E!important;}
@@ -330,7 +330,7 @@ html[lang="es"] .lang-es{display:inline;}
 }
 
 /* ---- Homepage bridge: tan torn-paper journal note ---- */
-.bridge{background-color:var(--paper);padding:clamp(3.2rem,10vw,6.4rem) 1.4rem;}
+.bridge{background-color:var(--lw-light);background-image:var(--lw);background-size:1200px 1200px;padding:clamp(3.2rem,10vw,6.4rem) 1.4rem;}
 .bridge .wrap-narrow{
   position:relative;max-width:580px;margin:0 auto;
   padding:clamp(2.8rem,7vw,4rem) clamp(2rem,6.5vw,3.6rem);
